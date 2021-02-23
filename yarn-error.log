@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js install
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js add expo
 
 PATH: 
-  /usr/local/opt/openjdk/bin:/usr/local/opt/openjdk/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/usr/local/opt/openjdk/bin:/Users/qasimyousaf/Library/Android/sdk/emulator:/Users/qasimyousaf/Library/Android/sdk/tools:/Users/qasimyousaf/Library/Android/sdk/tools/bin:/Users/qasimyousaf/Library/Android/sdk/platform-tools:/Users/qasimyousaf/.npm-global/bin
 
 Yarn version: 
   1.22.10
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: connect ENETUNREACH 104.16.20.35:443
+  Error: connect ENETUNREACH 104.16.19.35:443
       at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1145:16)
 
 npm manifest: 
