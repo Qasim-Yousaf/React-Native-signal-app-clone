@@ -7,16 +7,19 @@ const CustomListItem = ({ id, chatName, enterChat }) => {
   const [chatMessages, setChatMessages] = useState([]);
 
   useEffect(() => {
+    // console.warn("call server");
     const unsubscribe = db
       .collection("chats")
       .doc(id)
       .collection("messages")
+      .orderBy("timestamp", "desc")
       .onSnapshot((snapShot) => {
         setChatMessages(snapShot.docs.map((doc) => doc.data()));
       });
 
     return unsubscribe;
-  });
+  }, []);
+
   return (
     <ListItem
       onPress={() => enterChat(id, chatName)}

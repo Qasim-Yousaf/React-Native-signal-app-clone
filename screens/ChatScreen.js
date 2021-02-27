@@ -83,6 +83,8 @@ const ChatScreen = ({ navigation, route }) => {
   }, [navigation, messages]);
 
   useLayoutEffect(() => {
+    // console.warn("ppppppppppppp");
+
     //   ceate a listner
     const unsubscribe = db
       .collection("chats")
